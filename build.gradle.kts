@@ -15,8 +15,10 @@ repositories {
 
 dependencies {
     implementation(kotlin("stdlib-jdk8"))
+    api("io.ktor:ktor-server-netty:$ktorVersion")
     api("io.ktor:ktor-client-okhttp:$ktorVersion")
-    api("io.ktor:ktor-client-gson:$ktorVersion")
+    api("io.ktor:ktor-client-cio:$ktorVersion")
+    api("io.ktor:ktor-client-android:$ktorVersion")
 }
 
 tasks {
