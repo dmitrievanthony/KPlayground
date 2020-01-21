@@ -5,7 +5,7 @@ plugins {
 group = "org.example"
 version = "1.0-SNAPSHOT"
 
-val ktorVersion = "1.2.6"
+val ktorVersion = "1.2.3"
 
 repositories {
     mavenCentral()
@@ -15,8 +15,7 @@ repositories {
 
 dependencies {
     implementation(kotlin("stdlib-jdk8"))
-    api("io.ktor:ktor-client-okhttp:$ktorVersion")
-    api("io.ktor:ktor-client-gson:$ktorVersion")
+    api("io.ktor:ktor-network:$ktorVersion")
 }
 
 tasks {
